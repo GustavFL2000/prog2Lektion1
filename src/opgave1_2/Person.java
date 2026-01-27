@@ -1,4 +1,4 @@
-package model;
+package opgave1_2;
 
 public class Person {
     private String navn;

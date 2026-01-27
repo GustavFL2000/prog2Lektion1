@@ -1,4 +1,4 @@
-package model;
+package opgave1_2;
 
 import java.time.Year;
 

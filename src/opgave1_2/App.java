@@ -1,6 +1,4 @@
-import model.Mekaniker;
-import model.Synsmand;
-import model.Værkfører;
+package opgave1_2;
 
 import java.time.Year;
 import java.util.ArrayList;
