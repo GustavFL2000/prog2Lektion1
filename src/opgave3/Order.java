@@ -34,5 +34,14 @@ public class Order {
     public List<OrderLine> getOrderLines() {
         return new ArrayList<OrderLine>(orderLines);
     }
-    
+
+    public double getOrderPrice() {
+        double sum = 0;
+        for (OrderLine orderLine : orderLines) {
+            sum += orderLine.getOrderLinePrice();
+        }
+        return sum;
+    }
+
+
 }

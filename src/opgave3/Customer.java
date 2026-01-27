@@ -50,4 +50,13 @@ public class Customer {
 		}
 	}
 
+	public double totalBuy() {
+		double sum = 0;
+		for (Order order : orders) {
+			sum += order.getOrderPrice();
+		}
+		return sum;
+	}
+
+
 }

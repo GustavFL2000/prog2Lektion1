@@ -9,7 +9,7 @@ public class OrderLine {
     private Product product;
 
     /**
-     * An line on the Order
+     * A line on the Order
      * 
      * @param lineNumber
      *            the line number. Must be >= 1 and sequential.
@@ -22,6 +22,10 @@ public class OrderLine {
         this.lineNumber = lineNumber;
         this.count = count;
         this.product = product;
+    }
+
+    public double getOrderLinePrice(){
+        return this.count * this.product.getUnitPrice();
     }
 
     public int getLineNumber() {
