@@ -15,6 +15,7 @@ public class Synsmand extends Mekaniker{
         this.antalSyn = antalSyn;
     }
 
+    @Override
     public double beregnLøn(){
         return super.beregnLøn()+(antalSyn*29);
     }

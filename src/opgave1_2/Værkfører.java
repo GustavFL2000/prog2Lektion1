@@ -19,6 +19,7 @@ public class Værkfører extends Mekaniker {
         this.extraLøn = extraLøn;
     }
 
+    @Override
     public double beregnLøn(){
         return super.beregnLøn()+(extraLøn*37);
     }

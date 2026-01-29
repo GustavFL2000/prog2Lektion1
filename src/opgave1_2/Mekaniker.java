@@ -17,6 +17,7 @@ public class Mekaniker extends Person{
         this.timeLøn = timeLøn;
     }
 
+
     public double beregnLøn(){
         //Beregner løn for en uge med 37timer
         return timeLøn*37;
