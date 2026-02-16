@@ -49,5 +49,21 @@ public class App {
         customer2.addOrder(order4);
         customer2.addOrder(order5);
         customer2.addOrder(order6);
+
+        // Tildel rabatter
+        customer1.setDiscount(new PercentDiscount(15));
+        customer2.setDiscount(new FixedDiscount(250, 1000));
+
+        // Udskriv resultater
+        System.out.println("----- Kunde 1 -----");
+        System.out.println("Total uden rabat: " + customer1.totalBuy());
+        System.out.println("Total med rabat: " + customer1.totalBuyWithDiscount());
+
+        System.out.println();
+
+        System.out.println("----- Kunde 2 -----");
+        System.out.println("Total uden rabat: " + customer2.totalBuy());
+        System.out.println("Total med rabat: " + customer2.totalBuyWithDiscount());
+
     }
 }
